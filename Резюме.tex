@@ -1,0 +1,152 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	urlcolor=blue
+}
+
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\renewcommand{\labelitemi}{--}
+
+\begin{document}
+	
+	\begin{center}
+		\Large\textbf{Эмиль Айратович Багаутдинов} \\
+		\normalsize
+		\vspace{5pt}
+		\begin{tabular}{rl}
+			Email: & \href{mailto:emil.bashautdinov@yandex.ru}{emil.bashautdinov@yandex.ru} \\
+			GitHub: & \href{https://github.com/dmngwtf}{github.com} \\
+		\end{tabular}
+	\end{center}
+	
+	\vspace{10pt}
+	
+	\section*{Образование}
+	\textbf{НИУ ВШЭ}, Москва \\
+	Факультет: МИЭМ — Московский институт электроники и математики \\
+	Направление: Инфокоммуникационные технологии и системы связи
+	
+	\vspace{10pt}
+	
+	\section*{Навыки}
+	
+	\subsection*{Языки программирования}
+	\begin{itemize}[leftmargin=1.5em]
+		\item C, C++, Python
+	\end{itemize}
+	
+	\subsection*{Web и Backend}
+	\begin{itemize}[leftmargin=1.5em]
+		\item FastAPI (создание REST API)
+		\item SQLAlchemy, Pydantic (ORM и валидация)
+		\item Aiogram (Telegram-боты)
+		\item asyncio (асинхронное программирование)
+	\end{itemize}
+	
+	\subsection*{Базы данных}
+	\begin{itemize}[leftmargin=1.5em]
+		\item PostgreSQL
+		\item Проектирование структуры БД, оптимизация запросов
+	\end{itemize}
+	
+	\subsection*{Аудио и голосовые технологии}
+	\begin{itemize}[leftmargin=1.5em]
+		\item Vosk, SpeechRecognition (распознавание речи)
+		\item FFmpeg (обработка аудио)
+	\end{itemize}
+	
+	\subsection*{Инфраструктура и DevOps}
+	\begin{itemize}[leftmargin=1.5em]
+		\item Docker (контейнеризация, настройка окружения)
+		\item Locust (нагрузочное тестирование)
+		\item Pytest (юнит-тестирование)
+		\item Redis (Кеширование)
+	\end{itemize}
+	
+	\subsection*{Алгоритмы и математика}
+	\begin{itemize}[leftmargin=1.5em]
+		\item Знание алгоритмов и структур данных
+		\item Участие в олимпиадном программировании
+		\item Два курса высшей математики НИУ ВШЭ
+	\end{itemize}
+	
+	\subsection*{Языки}
+	\begin{itemize}[leftmargin=1.5em]
+		\item Русский — родной
+		\item Английский — B2+
+	\end{itemize}
+	
+	\vspace{10pt}
+	
+	
+	
+	
+	\section*{Проекты}
+	
+	\subsection*{Бэкенд-сервис пункта выдачи заказов}
+	Сервис управления пунктами выдачи и складом \\
+	\textit{FastAPI, PostgreSQL, SQLAlchemy, Docker, Pydantic, Pytest}\\  
+	REST API, учёт товаров, контейнеризация, тесты\\
+	{Код: \href{https://github.com/dmngwtf/backend_pvz_service}{\texttt{github.com/dmngwtf/backend\_pvz\_service}}}
+
+		
+		
+	
+	\subsection*{Микросервис для сокращения ссылок}
+	Сокращение и перенаправление URL  \\
+	\textit{Python, FastAPI, SQLAlchemy, Alembic, Redis, PostgreSQL, Docker} \\ 
+	Хеширование, хранение в БД, кэширование, миграции\\
+	{Код: \href{https://github.com/dmngwtf/url_generator_api}{\texttt{github.com/dmngwtf/url\_generator\_api}}
+	
+	
+	\subsection*{TCP-сервер для сбора метрик}
+	Сбор, хранение и запись метрик  TimescaleD \\
+	\textit{Python, asyncio, structlog , PostgreSQL, TimescaleDB, Pytest} \\ 
+	Сбор, хранение, запись метрик в БД, миграции\\
+	{Код: \href{https://github.com/dmngwtf/metric_collector}{\texttt{github.com/dmngwtf/metric\_collector}}
+		
+	
+	
+	\subsection*{ИИ-ассистент в Telegram-боте}
+	Бот для голосовой диагностики  \\
+	\textit{Python, aiogram, Vosk, gTTS, asyncio, FFmpeg} \\ 
+	Распознавание речи, синтез ответов, API медицины\\
+	{Код: \href{https://github.com/dmngwtf/AI_assistant_doctor}{\texttt{github.com/dmngwtf/AI\_assistant\_doctor}}
+	
+	
+	\subsection*{Прошивка для полётного контроллера (в команде)}
+	ПО для российского микроконтроллера MIK32  \\
+	\textit{C, RTOS, Betaflight}  \\
+	Сенсоры, логика управления, низкоуровневая разработка\\
+	Код: \textit{располагается в закрытом репозитории университета}
+	
+	\subsection*{Бэкенд-сервис магазина с мерчем}
+	Интернет-магазин (тестовое задание)  \\
+	\textit{FastAPI, PostgreSQL, Docker, Locust, Pytest}  \\
+	Авторизация, покупки, нагрузочное тестирование\\
+	{Код: \href{https://github.com/dmngwtf/avito_merchshop}{\texttt{github.com/dmngwtf/avito\_merchshop}}
+	
+	
+	\subsection*{Матричный калькулятор}
+	GUI-калькулятор матриц  \\
+	\textit{C++, Qt}  \\
+	Собственная реализация операций, университетский проект\\
+	Код: \textit{располагается в закрытом репозитории университета}
+	
+	
+	
+	\section*{Цель}
+	Хочу начать карьеру в IT-компании, где смогу применить свои знания в backend-разработке, проектировании архитектуры, интеграции сервисов и работе с данными. Интересуюсь высоконагруженными системами, микросервисами и голосовыми интерфейсами. Готов быстро учиться и приносить практическую пользу.
+	
+\end{document}
