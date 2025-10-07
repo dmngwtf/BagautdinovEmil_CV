@@ -1,18 +1,18 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage[margin=1in]{geometry}
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=0.7in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
-\usepackage{hyperref}
 \usepackage[russian]{babel}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{xcolor}
 \usepackage{hyperref}
-\hypersetup{
-	colorlinks=true,
-	urlcolor=blue
-}
+\hypersetup{colorlinks=true, urlcolor=blue}
 
+% Компактные секции и списки
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+\titlespacing*{\subsection}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=1.5em, itemsep=2pt, topsep=2pt, parsep=0pt, partopsep=0pt}
 
 \titleformat{\section}{\large\bfseries}{}{0pt}{}
 \titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
@@ -21,169 +21,112 @@
 \begin{document}
 	
 	\begin{center}
-		\Large\textbf{Багаутдинов Эмиль Айратович} \\
+		\Large\textbf{Багаутдинов Эмиль Айратович} \\[3pt]
 		\normalsize
-		\vspace{5pt}
-		\begin{tabular}{rl}
-			Email: & \href{mailto:emil.bashautdinov@yandex.ru}{emil.bashautdinov@yandex.ru} \\
-			GitHub: & \href{https://github.com/dmngwtf}{github.com} \\
-		\end{tabular}
+		Email: \href{mailto:emil.bashautdinov@yandex.ru}{emil.bashautdinov@yandex.ru} \quad
+		GitHub: \href{https://github.com/dmngwtf}{github.com/dmngwtf}
 	\end{center}
 	
-	\vspace{10pt}
+	\vspace{4pt}
 	
 	\section*{Образование}
-	\textbf{НИУ ВШЭ}, Москва \\
-	Факультет: МИЭМ — Московский институт электроники и математики \\
-	Направление: Инфокоммуникационные технологии и системы связи
-	
-	\vspace{10pt}
+	\textbf{НИУ ВШЭ}, Москва — ФКН, Программная инженерия (до 2027)
 	
 	\section*{Навыки}
 	
 	\subsection*{Языки программирования}
-	\begin{itemize}[leftmargin=1.5em]
-    \item \textbf{Python} —  итераторы, генераторы, декораторы, дескрипторы, контекстные менеджеры, протоколы, асинхронность 
-    \item \textbf{C++} —    умные указатели, RAII, перемещение и семантика владения, const-правильность, идиомы безопасного и эффективного кода
-    \item \textbf{C}
-    
-		
+	\begin{itemize}
+		\item \textbf{Python} — итераторы, генераторы, дескрипторы, контекстные менеджеры, протоколы, async
+		\item \textbf{C++} — умные указатели, RAII, семантика владения, const-правильность
+		\item \textbf{C}
 	\end{itemize}
 	
 	\subsection*{Web и Backend}
-	\begin{itemize}[leftmargin=1.5em]
-		\item FastAPI (создание REST API)
-		\item SQLAlchemy, Pydantic (ORM и валидация)
-		\item Aiogram (Telegram-боты)
-		\item asyncio (асинхронное программирование)
+	\begin{itemize}
+		\item FastAPI, SQLAlchemy, Pydantic, Aiogram, asyncio
 	\end{itemize}
 	
 	\subsection*{Базы данных}
-	\begin{itemize}[leftmargin=1.5em]
-		\item PostgreSQL
-		\item TimeScaleDB
-		\item MongoDB
-		\item Проектирование структуры БД, оптимизация запросов
+	\begin{itemize}
+		\item PostgreSQL, TimeScaleDB, MongoDB
+		\item Проектирование БД, оптимизация запросов
 	\end{itemize}
 	
 	\subsection*{Сети}
 	\begin{itemize}
-		\item Широкая теоретическая база на основе трудов Э. Танненбаума
-		\item Модель OSI и стек TCP/IP
-		\item ARP, NAT, маршрутизация, IP (v4/v6), DNS, DHCP
+		\item Модель OSI, TCP/IP, маршрутизация, DNS, DHCP
 		\item Протоколы: TCP, UDP, HTTP, FTP, SMTP, SNMP
-		\item Основы сетевой безопасности, работа коммутаторов и маршрутизаторов
-	\end{itemize}
-	
-	\subsection*{Аудио и голосовые технологии}
-	\begin{itemize}[leftmargin=1.5em]
-		\item Vosk, SpeechRecognition (распознавание речи)
-		\item FFmpeg (обработка аудио)
+		\item Основы сетевой безопасности
 	\end{itemize}
 	
 	\subsection*{Инфраструктура и DevOps}
-	\begin{itemize}[leftmargin=1.5em]
-		\item Docker (контейнеризация, настройка окружения)
-		\item Locust (нагрузочное тестирование)
-		\item Pytest (юнит-тестирование)
-		\item Redis (Кеширование)
+	\begin{itemize}
+		\item Docker, Locust, Pytest, Redis, Kafka
+	\end{itemize}
+	
+	\subsection*{Прочее}
+	\begin{itemize}
+		\item Vosk, SpeechRecognition, FFmpeg
+	\end{itemize}
+	
+	\subsection*{Обработка естественного языка (NLP)}
+	\begin{itemize}
+		\item TF-IDF, Word2Vec, Sentence-BERT
+		\item HuggingFace Transformers (BERT, GPT)
+		\item FAISS, cosine similarity, токенизация, лемматизация
 	\end{itemize}
 	
 	\subsection*{Алгоритмы и математика}
-	\begin{itemize}[leftmargin=1.5em]
-		\item Знание алгоритмов и структур данных
-		\item Призовое место в тренировках по алгоритмам от яндекса 5.0
-		\item \textbf{Изучены основные разделы высшей математики (НИУ ВШЭ,средняя оценка — 7.8)}:
-		\begin{itemize}
-			\item \textbf{Аналитическая математика:} математический анализ, линейная алгебра
-			\item \textbf{Дискретная математика:} дискретная математика, теория информации
-			\item \textbf{Вероятностно-статистический анализ:} теория вероятностей
-			\item \textbf{Численные методы:} вычислительные методы и приближённые алгоритмы
-		\end{itemize}
-		\item  Участие в олимпиадном программировани в школе и ВУЗе
-		
-		
+	\begin{itemize}
+		\item Алгоритмы и структуры данных
+		\item Призовое место в тренировках Яндекс.Алгоритмы 5.0
+		\item Средняя оценка по высшей математике — 7.8
 	\end{itemize}
 	
 	\subsection*{Языки}
-	\begin{itemize}[leftmargin=1.5em]
-		\item Русский — родной
-		\item Английский — B2+
+	\begin{itemize}
+		\item Русский — родной, Английский — B2+
 	\end{itemize}
 	
-\section*{Дополнительное обучение}
-\begin{itemize}
-	\item Углублённое изучение языка Python по книге «Fluent Python» (Luciano Ramalho): продвинутые концепции — итераторы, генераторы, дескрипторы, протоколы, асинхронность и идиоматический стиль
-	\item Изучение фундаментальных принципов работы компьютерных сетей по книге Э. Танненбаума «Компьютерные сети»: модели OSI и TCP/IP, маршрутизация, протоколы транспортного и прикладного уровня, безопасность
-\end{itemize}
-
-	
-	\vspace{10pt}
-	
-	
-	
+	\section*{Дополнительное обучение}
+	\begin{itemize}
+		\item \textit{Fluent Python} — продвинутые концепции Python
+		\item \textit{Э. Танненбаум «Компьютерные сети»} — принципы, протоколы, безопасность
+	\end{itemize}
 	
 	\section*{Проекты}
 	
 	\subsection*{Бэкенд-сервис пункта выдачи заказов}
-	Сервис управления пунктами выдачи и складом \\
-	\textit{FastAPI, PostgreSQL, SQLAlchemy, Docker, Pydantic, Pytest}\\  
+	\textit{FastAPI, PostgreSQL, SQLAlchemy, Docker, Pydantic, Pytest}\\
 	REST API, учёт товаров, контейнеризация, тесты\\
-	{Код: \href{https://github.com/dmngwtf/backend_pvz_service}{\texttt{github.com/dmngwtf/backend\_pvz\_service}}}
-
-		
-		
+	Код: \href{https://github.com/dmngwtf/backend_pvz_service}{github.com/dmngwtf/backend\_pvz\_service}
 	
 	\subsection*{Микросервис для сокращения ссылок}
-	Сокращение и перенаправление URL  \\
-	\textit{Python, FastAPI, SQLAlchemy, Alembic, Redis, PostgreSQL, Docker} \\ 
-	Хеширование, хранение в БД, кэширование, миграции\\
-	{Код: \href{https://github.com/dmngwtf/url_generator_api}{\texttt{github.com/dmngwtf/url\_generator\_api}}
-	
+	\textit{FastAPI, SQLAlchemy, Alembic, Redis, PostgreSQL, Docker}\\
+	Кэширование, миграции, хеширование URL\\
+	Код: \href{https://github.com/dmngwtf/url_generator_api}{github.com/dmngwtf/url\_generator\_api}
 	
 	\subsection*{TCP-сервер для сбора метрик}
-	Сбор, хранение и запись метрик  TimescaleD \\
-	\textit{Python, asyncio, structlog , PostgreSQL, TimescaleDB, Pytest} \\ 
-	Сбор, хранение, запись метрик в БД, миграции\\
-	{Код: \href{https://github.com/dmngwtf/metric_collector}{\texttt{github.com/dmngwtf/metric\_collector}}
-		
-	\subsection*{TCP-ECHO бенчмарк}
-	Сравнение асинхронной и многопоточной моделей сервера\\
-	\textit{Python, asyncio, threading, matpotlib, tqdm} \\ 
-	Сбор и визуализация метрик производительности (RPS, Latency, Memory Usage)\\
-	{Код: \href{https://github.com/dmngwtf/highload_tcp_echo_server_benchmark}{\texttt{github.com/dmngwtf/highload\_tcp\_echo\_benchmark}}
-		
+	\textit{Python, asyncio, structlog, PostgreSQL, TimescaleDB, Pytest}\\
+	Сбор, хранение и запись метрик\\
+	Код: \href{https://github.com/dmngwtf/metric_collector}{github.com/dmngwtf/metric\_collector}
 	
+	\subsection*{TCP-ECHO бенчмарк}
+	\textit{Python, asyncio, threading, matplotlib, tqdm}\\
+	Сравнение асинхронной и многопоточной моделей, метрики RPS/Latency\\
+	Код: \href{https://github.com/dmngwtf/highload_tcp_echo_server_benchmark}{github.com/dmngwtf/highload\_tcp\_echo\_benchmark}
 	
 	\subsection*{ИИ-ассистент в Telegram-боте}
-	Бот для голосовой диагностики  \\
-	\textit{Python, aiogram, Vosk, gTTS, asyncio, FFmpeg} \\ 
+	\textit{Python, aiogram, Vosk, gTTS, asyncio, FFmpeg}\\
 	Распознавание речи, синтез ответов, API медицины\\
-	{Код: \href{https://github.com/dmngwtf/AI_assistant_doctor}{\texttt{github.com/dmngwtf/AI\_assistant\_doctor}}
-	
-	
-	\subsection*{Прошивка для полётного контроллера (в команде)}
-	ПО для российского микроконтроллера MIK32  \\
-	\textit{C, RTOS, Betaflight}  \\
-	Сенсоры, логика управления, низкоуровневая разработка\\
-	Код: \textit{располагается в закрытом репозитории университета}
+	Код: \href{https://github.com/dmngwtf/AI_assistant_doctor}{github.com/dmngwtf/AI\_assistant\_doctor}
 	
 	\subsection*{Бэкенд-сервис магазина с мерчем}
-	Интернет-магазин (тестовое задание)  \\
-	\textit{FastAPI, PostgreSQL, Docker, Locust, Pytest}  \\
+	\textit{FastAPI, PostgreSQL, Docker, Locust, Pytest}\\
 	Авторизация, покупки, нагрузочное тестирование\\
-	{Код: \href{https://github.com/dmngwtf/avito_merchshop}{\texttt{github.com/dmngwtf/avito\_merchshop}}
-	
-	
-	\subsection*{Матричный калькулятор}
-	GUI-калькулятор матриц  \\
-	\textit{C++, Qt}  \\
-	Собственная реализация операций, университетский проект\\
-	Код: \textit{располагается в закрытом репозитории университета}
-	
-	
+	Код: \href{https://github.com/dmngwtf/avito_merchshop}{github.com/dmngwtf/avito\_merchshop}
 	
 	\section*{Цель}
-	Хочу начать карьеру в IT-компании, где смогу применить накопленные знания в продуктовой разработке. Интересуюсь созданием качественных и полезных решений, стремлюсь развиваться в команде профессионалов. Готов быстро обучаться, брать ответственность и приносить практическую пользу с первых задач.
+	Хочу развиваться в команде профессионалов, участвовать в создании качественных backend-решений и приносить пользу с первых задач.
 	
 \end{document}
