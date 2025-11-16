@@ -6,3 +6,4 @@
 .*fdb_latexmk
 .gitignore
 *.tex
+.DS_Store
