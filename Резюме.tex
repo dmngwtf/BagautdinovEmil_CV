@@ -47,10 +47,8 @@
 	
 	\textit{Python, FastAPI, ClickHouse, KeyDB, SQL, Docker, REST API, Grafana, Dash, Git, asyncio}
 	
-	Разрабатываю бэкенд-инфраструктуру внутреннего сервиса Tele2 для инженеров, который отображает базовые станции и покрытие по всей России на основе ежедневных отчетов из базы данных.  
-	Реализую REST API для обработки и подготовки геоданных, интеграцию с ClickHouse и KeyDB, а также обеспечение данных для визуализации через Grafana и фронтенд на Dash.  
-	Оптимизирую SQL-запросы, добавляю кэширование и гарантирую стабильную работу бэкенда при высокой нагрузке.  
-	Участвую в проектировании архитектуры и деплое контейнеризированных Python-сервисов в Docker.
+Разрабатываю бэкенд для внутреннего сервиса Tele2, показывающего базовые станции и покрытие России. Реализую REST API для геоданных, интеграцию с ClickHouse и KeyDB, обеспечиваю визуализацию через Grafana и Dash. Оптимизирую SQL, кэширую данные и поддерживаю стабильность при высокой нагрузке. Участвую в архитектуре и деплое контейнеризированных Python-сервисов.
+
 	
 	
 	
@@ -70,20 +68,23 @@
 	Разработал REST API для учёта и выдачи заказов. Настроил миграции и контейнеризацию сервиса, покрыл тестами > 80 \%. \\ 
 	\href{https://github.com/dmngwtf/backend_pvz_service}{github.com/dmngwtf/backend\_pvz\_service}
 	
-	\subsection*{Универсальный Telegram-бот для скачивания видео}
-	\textit{Python, aiogram, PostgreSQL/TimescaleDB, Docker, diskcache, Pytest}
-	Реализовал асинхронный Telegram-бот для скачивания видео, инегрировал распознавание музыки, кеширование, доступ к истории скачиваний для пользователя. \\
-	\href{https://github.com/dmngwtf/tiktok-siphon}{https://github.com/dmngwtf/tiktok-siphon}
+	\subsection*{Auth \& Orders Service}
+	\textit{FastAPI, AsyncPG, RabbitMQ, PostgreSQL, Docker, Alembic}
 	
-	\subsection*{TCP-сервер для сбора метрик}
-	\textit{Python, asyncio, TimescaleDB, structlog, Pytest}  
-	Реализовал приём метрик по TCP и сохранение во временные ряды в TimescaleDB. Настроил логирование и модульные тесты.  \\
-	\href{https://github.com/dmngwtf/metric_collector}{github.com/dmngwtf/metric\_collector}
+	Разработал асинхронный сервис для управления пользователями и заказами: JWT-аутентификация, обработка заказов через очереди, автоматические миграции и контейнеризация. \\
+	\href{https://github.com/your/repo}{github.com/your/repo}
+
 	
-	\subsection*{TCP-ECHO бенчмарк}
-	\textit{Python, asyncio, threading, matplotlib}  
-	Исследовал производительность асинхронной и многопоточной моделей, сравнил RPS и Latency.  
-	\href{https://github.com/dmngwtf/highload_tcp_echo_server_benchmark}{github.com/dmngwtf/highload\_tcp\_echo\_benchmark}
+\subsection*{BotFarm Service}
+\textit{FastAPI, AsyncPG, SQLAlchemy, PostgreSQL, Docker, Kubernetes, Alembic}
+
+Разработал асинхронный микросервис для управления фермой ботов с REST API и JWT-аутентификацией администраторов. Реализовал CRUD для аккаунтов ботов, управление проектами и окружениями, автоматические миграции базы данных и контейнеризацию с поддержкой Kubernetes. \\
+\href{https://github.com/your/repo}{github.com/your/repo}
+
+	
+	
+	
+	
 	
 	
 	
